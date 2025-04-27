@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 5 - Clase 2</title>
+</head>
+
+<body>
+    <header>
+        <h1>HTML 5 - Clase 5</h1>
+    </header>
+    <nav>
+        <ul>
+            <li> Home</li>
+            <li> Contacto </li>
+            <li> Productos </li>
+            <li> Medio de pago </li>
+        </ul>
+    </nav>
+
+    <section>
+        <article>
+            <h3>Formulario de contacto</h3>
+            <form method="get">
+                <label for="name">Nombre: </label>
+                <input id="name" name="name" list="name" type="text" placeholder="Nombre" required />
+
+                <datalist id="name">
+                    <option value="Esteban"></option>
+                    <option value="David"></option>
+                </datalist>
+                <br />
+                <label for="email">Email: </label>
+                <input id="email" name="email" type="email" placeholder="Email" required />
+                <br />
+
+                <label for = "password">Contraseña </label>
+                <input
+                id ="password"
+                name="password"
+                type="password"
+                placeholder="Contraseña"
+                required
+                />
+                <br/>
+                
+                <label for="male">Hombre </label>
+                <input id="male" name="sex" type="radio" value="hombre"/>
+
+                <label for ="feme">Mujer</label>
+                <input id = "feme" name="sex" type="radio" value="mujer"/>
+                <br />
+
+                <label for="phone">Telefono </label>
+                <input id="phone" name="phone" type="number" placeholder="Numero de telefono" />
+                <br />
+
+                <label for="date">Fecha de nacimiento</label>
+                <input type="date" placeholder="Fecha de nacimiento" />
+                <br />
+
+                <input type="color" />
+                <br />
+
+                <label for="coments">Comentarios</label>
+                <textarea id="coments" rows="6" cols="50" placeholder="Comentarios"></textarea>
+                <br />
+
+                <label for="country"> Nacionalidad: </label>
+                <select id="country" name="country">
+                    <option value="ARG">Argentina</option>
+                    <option value="BRA">Brasil</option>
+                    <option value="URU">Uruguay</option>
+                </select>
+                <br />
+
+                <label for="terms">Terminos y condiciones: </label>
+                <input id="terms" type="checkbox" />
+                <br />
+
+                <button type="submit">Enviar</button>
+
+            </form>
+        </article>
+    </section>
+</body>
+
+</html>
