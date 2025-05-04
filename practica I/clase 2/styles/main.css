@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+}
+
+body{
+    font-family:book, "Handset Sans UI", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; 
+}
+
+.header{
+    align-items: center;
+    background-color: black;
+    display: flex;
+    padding: 0.5rem 1rem;
+
+}
+.header__nav .header__list{
+display: flex;
+list-style: none;
+padding: 0;
+}
+
+.header__nav .header__list .header__listitem{
+    padding-left: 2px;
+}
+
+.header .header__actions{
+    margin-left: auto;
+}
+
+.btn {
+    border-radius: 8px;
+    display: inline;
+    font-size: 0.875rem;
+    font-weight: 700;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+.btn-primary{
+    color: white;
+}
+
+
+.btn-primary:hover{
+background-color: rgba(64, 68, 89, 0.6);
+border-radius: 8px;
+}
+.btn-secondary{
+    background-color: white;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 700;
+    font-size: .875rem;
+    display: inline-block;
+    border-radius: 8px;
+    }
+
+.btn-secondary:hover{
+    background-color: hsla(0, 0%, 100%, 0.75);
+}
+
+main {
+    height: calc(100vh - 93px);
+  }
+   
+.header img {
+    width: 110.63px;
+    height: 30px;
+    margin-right: 1rem;
+}
+
+.heroBanner {
+    position: relative;
+}
+.heroBanner__container{
+    max-width: 1140px;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 32px;
+    left: 20%;
+}
+.heroBanner__info{
+    max-width: 50%;
+    color: white;
+    box-sizing: border-box;
+    margin-bottom: 32px;
+
+}
+
+.heroBanner__container .heroBanner__info ul.heroBanner__list{
+display: flex;
+list-style: none;
+padding: 0;
+flex-wrap: wrap;
+justify-content: flex-start;
+gap: 16px;
+text-transform: uppercase;
+margin-bottom: 16px;
+font-weight: 600;
+}
+
+.heroBanner__info img{
+    max-width: 370px;
+}
+.heroBanner__info p {
+    font-size: 16px;
+    line-height: 28.8px;
+    letter-spacing: 1px;
+    margin-bottom: 14px;
+}
+
+/*.footer{
+background-color: black;
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 40px;
+text-align: center;
+padding: 40px;
+box-sizing: border-box;
+
+}*/
+
+.footer {
+    background-color: #000000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    box-sizing: border-box;
+    position: fixed;
+    width: 100%;
+  }

@@ -5,86 +5,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML 5 - Clase 2</title>
+    <link rel="stylesheet" href="./styles/main.css" />
 </head>
 
 <body>
-    <header>
-        <h1>HTML 5 - Clase 5</h1>
+    <header class="header">
+        <img src="./3d4a7e2b0215.png" alt="Max Logo" />
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li class="header__listitem">
+                    <a class="btn btn-primary"
+                        href="https://play.max.com/movie/e8dfef9b-fa41-4041-8230-7dd832116f2e">Inicio</a>
+                </li>
+                <li class="header__listitem"> <a class="btn btn-primary" href="https://play.max.com/series">Series</a> </li>
+                <li class="header__listitem"> <a class="btn btn-primary" href="https://play.max.com/movies"> Peliculas </a></li>
+                <li class="header__listitem"> <a class="btn btn-primary" href="https://play.max.com/genre/kids-family"> Niños y familia</a></li>
+            </ul>
+            </nav>
+            <div class="header__actions">
+                <a class="btn btn-primary" href="https://auth.max.com/login?_referrer=eyJlbGVtZW50IjoiQnV0dG9uIiwic2NyZWVuTmFtZSI6IlZlciBHb2R6aWxsYSB5IEtvbmc6IEVsIE51ZXZvIEltcGVyaW8gKEhCTykgfCBNYXgiLCJzY3JlZW5VUkkiOiJodHRwczovL3d3dy5tYXguY29tL2FyL2VzL21vdmllcy9nb2R6aWxsYS15LWtvbmctZWwtbnVldm8taW1wZXJpby9lOGRmZWY5Yi1mYTQxLTQwNDEtODIzMC03ZGQ4MzIxMTZmMmUiLCJsb2NhdGlvbiI6Ik1vdmllcy9WZXIgR29kemlsbGEgeSBLb25nOiBFbCBOdWV2byBJbXBlcmlvIChIQk8pIHwgTWF4fGJhbmR8NzcxOTQiLCJsb2NhdGlvblBvc2l0aW9uIjowLCJ0YXJnZXRUZXh0IjoiSW5ncmVzYSJ9">Ingresa </a>
+                <a class="btn btn-secondary" href="https://auth.max.com/login?_referrer=https://auth.max.com/product?_referrer=eyJlbGVtZW50IjoiQnV0dG9uIiwic2NyZWVuTmFtZSI6IlZlciBHb2R6aWxsYSB5IEtvbmc6IEVsIE51ZXZvIEltcGVyaW8gKEhCTykgfCBNYXgiLCJzY3JlZW5VUkkiOiJodHRwczovL3d3dy5tYXguY29tL2FyL2VzL21vdmllcy9nb2R6aWxsYS15LWtvbmctZWwtbnVldm8taW1wZXJpby9lOGRmZWY5Yi1mYTQxLTQwNDEtODIzMC03ZGQ4MzIxMTZmMmUiLCJsb2NhdGlvbiI6Ik1vdmllcy9WZXIgR29kemlsbGEgeSBLb25nOiBFbCBOdWV2byBJbXBlcmlvIChIQk8pIHwgTWF4fGJhbmR8NzcxOTQiLCJsb2NhdGlvblBvc2l0aW9uIjowLCJ0YXJnZXRUZXh0IjoiU3VzY3LDrWJldGUgYWhvcmEifQ%3D%3D">Suscribite ahora </a>
+
+            </div>
     </header>
-    <nav>
-        <ul>
-            <li> Home</li>
-            <li> Contacto </li>
-            <li> Productos </li>
-            <li> Medio de pago </li>
-        </ul>
-    </nav>
-
-    <section>
-        <article>
-            <h3>Formulario de contacto</h3>
-            <form method="get">
-                <label for="name">Nombre: </label>
-                <input id="name" name="name" list="name" type="text" placeholder="Nombre" required />
-
-                <datalist id="name">
-                    <option value="Esteban"></option>
-                    <option value="David"></option>
-                </datalist>
-                <br />
-                <label for="email">Email: </label>
-                <input id="email" name="email" type="email" placeholder="Email" required />
-                <br />
-
-                <label for = "password">Contraseña </label>
-                <input
-                id ="password"
-                name="password"
-                type="password"
-                placeholder="Contraseña"
-                required
-                />
-                <br/>
-                
-                <label for="male">Hombre </label>
-                <input id="male" name="sex" type="radio" value="hombre"/>
-
-                <label for ="feme">Mujer</label>
-                <input id = "feme" name="sex" type="radio" value="mujer"/>
-                <br />
-
-                <label for="phone">Telefono </label>
-                <input id="phone" name="phone" type="number" placeholder="Numero de telefono" />
-                <br />
-
-                <label for="date">Fecha de nacimiento</label>
-                <input type="date" placeholder="Fecha de nacimiento" />
-                <br />
-
-                <input type="color" />
-                <br />
-
-                <label for="coments">Comentarios</label>
-                <textarea id="coments" rows="6" cols="50" placeholder="Comentarios"></textarea>
-                <br />
-
-                <label for="country"> Nacionalidad: </label>
-                <select id="country" name="country">
-                    <option value="ARG">Argentina</option>
-                    <option value="BRA">Brasil</option>
-                    <option value="URU">Uruguay</option>
-                </select>
-                <br />
-
-                <label for="terms">Terminos y condiciones: </label>
-                <input id="terms" type="checkbox" />
-                <br />
-
-                <button type="submit">Enviar</button>
-
-            </form>
-        </article>
+    <main>
+    <section class = "heroBanner">
+        <img src="./kongo.avif" width="100%" alt=""/>
+      
+        <div class="heroBanner__container">
+         <div class="heroBanner__info">
+           <img src="./logopeli.webp" width="100%" alt="">
+           <ul class="heroBanner__list">
+            <li>+13</li>
+           <li>2024</li>
+           <li>Accion</li>
+           <li>Fantasia y Ciencia Ficcion</li></ul> 
+           <p> Godzilla 
+                y Kong: El nuevo Imperio. ¡Es una combinación titánica! Godzilla y Kong enfrentan a un colosal enemigo de Tierra Hueca, que amenaza su existencia y la nuestra.
+               
+            </p>
+             <a class="btn btn-secondary btn-a" href="https://play.max.com/video/watch/afe75eff-fc18-4cd6-89ca-3ad6c97ee9b5/b325f888-b2d5-4662-802a-2ad829a7a5d6"> Ver </a>
+                </div>
+            </div>
     </section>
+</main>
+<footer class="footer">
+    <p>© 2025 WarnerMedia Direct, LLC. Todos los derechos reservados.
+
+    </p>
+</footer>
+
 </body>
 
 </html>
