@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="/practica I/estilos/contacto_recetario.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav_header"> 
+            <ul class="header_list">
+            <li class="items_header">
+            <a class="btn_header" href="recetario.html"> Home </a> </li>
+            <li class="items_header">
+            <a class="btn_header" href="contacto.html"> Contacto </a>
+            </li>
+            </ul>
+        </nav>
+    </header>
+        <section class="contacto" id="contacto">
+     <form action="contacto.html" method="post" class="form_usuario">
+        <div class="campo_contacto">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+        </div>
+         <div class="campo_contacto">
+        <label for="email"> Email </label>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+        </div>
+        <div class="campo_contacto">
+        <label for="telefono">Telefono</label>
+        <input type="number" id="telefono" name="telefono" placeholder="Telefono" required>
+        </div>
+        <div class="campo_contacto">
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows = "5" cols="30" placeholder="Dejanos tu mensaje aca" required></textarea>
+        </div>
+        <a href="#" class="btn_enviar">Enviar</a>
+        <a href="#" class="btn_cancelar">Cancelar</a>  
+        </form>
+    
+    </section>
+
+    <footer class="footer">
+        <p> Todos los derechos reservados. </p>
+    </footer>
+</body>
+</html>

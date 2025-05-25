@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    border: 2px solid black;
+    min-height: 90%;
+    width: 100vh;
+    margin: auto;
+}
+
+.header{
+    border: 2px solid red;
+    align-items: center;
+    background-color: lightcoral;
+}
+
+.header_list{
+
+display: flex;
+align-items: center;
+list-style: none;
+justify-content: center;
+padding: 0;
+}
+
+.items_header{
+    padding: 0.5em; 
+}
+
+.contacto{
+    display: flex;
+    justify-content: center;
+    margin-top: 10em;
+    margin-bottom: 10em;
+}
+
+.form_usuario{
+    background-color: aqua;
+    padding: 2em;
+    border: solid blue 2px;
+}
+
+.campo_contacto {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  margin-bottom: 1em;
+  width: 100%;
+  border: 2px solid green;
+}
+
+.campo_contacto label {
+  width: 5em; /* todos los label tendrán el mismo ancho */
+  font-weight: bold;
+  text-align: right;
+  border: 2px solid violet;
+}
+
+.campo_contacto input,
+.campo_contacto textarea {
+  width: 15em; /* o lo que prefieras */
+  padding: 0.5em;
+  box-sizing: border-box;
+  border: 2px solid blue;
+}
+
+.btn_enviar,
+.btn_cancelar {
+  padding: 0.5em 1.5em;
+  margin: 1em 0.5em 0 0;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: .5em;
+  text-decoration: none;
+}
+
+.footer {
+height: 10%;
+    background-color: #f2f2f2; /* color claro de fondo */
+  text-align: center;
+  padding: 1em;
+  font-size: 0.9em;
+  color: #555;
+  border-top: 1px solid #ccc;
+  margin-top: 5em;
+  }
+
