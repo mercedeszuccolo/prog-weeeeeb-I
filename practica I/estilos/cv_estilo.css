@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+
+}
+
+.contenedor_principal{
+
+    width: 80%;
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+}
+
+.datos_foto{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    border: 2px solid green;
+
+}
+
+.datos_personales{
+
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.foto_cv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+.foto_cv img.foto{
+
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.experiencia_laboral{
+    border: 2px solid darkorange;
+    display: flex;
+    flex-direction: column;
+}
+
+.estudios{
+    border: 2px solid fuchsia;
+    display: flex;
+    flex-direction: column;
+}
+
+.datos_foto,
+.experiencia_laboral,
+.estudios {
+    flex: 1; /* 👈 esto reparte el alto de forma equitativa entre las 3 secciones */
+    justify-content: center;
+    padding: 2em;
+    box-sizing: border-box;
+}

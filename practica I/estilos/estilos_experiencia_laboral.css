@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.contenedor_general{
+    width: 80%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.tareas_realizadas{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.tiempo_trabajado{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.ubicacion, .tareas_realizadas, .tiempo_trabajado{
+    flex: 1;
+    justify-content: center;
+    padding: 1em;
+    box-sizing: border-box;
+}
