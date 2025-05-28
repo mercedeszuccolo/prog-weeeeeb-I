@@ -1,69 +1,73 @@
-*{
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+* {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body{
-    border: 2px solid black;
-    min-height: 100vh;
-    width: 100vh;
-    margin: auto;
+body {
+  border: 2px solid black;
+
+  margin: 0 auto;
 }
 
-.header{
-    border: 2px solid red;
-    align-items: center;
-    background-color: lightcoral;
+.header {
+  width: 80%;
+  border: 2px solid red;
+  align-items: center;
+  background-color: lightcoral;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX()-50%;
 }
 
-.header_list{
-
-display: flex;
-align-items: center;
-list-style: none;
-justify-content: center;
-padding: 0;
+.header_list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  justify-content: center;
+  padding: 0;
 }
 
-.items_header{
-    padding: 0.5em; 
+.items_header {
+  padding: 0.5em;
 }
 
-.contenedor_general{
-    border: 2px solid blue;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+.contenedor_general {
+  border: 2px solid blue;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-.receta_uno, .receta_dos{
-    border: 2px solid green;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 1em;
-
+.receta_uno,
+.receta_dos {
+  border: 2px solid green;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding: 5em;
 }
 
-.pasos_receta{
-    border: 2px solid violet;
+.pasos_receta {
+  border: 2px solid violet;
 }
 
-.img_recetas{
-width: 50%;
-height: auto;
-display: block;
-margin: 1em auto;
+.img_recetas {
+  width: 50%;
+  height: auto;
+  display: block;
+  margin: 1em auto;
 }
 
 .footer {
-height: 10%;
-    background-color: #f2f2f2; /* color claro de fondo */
+  height: 10%;
+  background-color: #f2f2f2; /* color claro de fondo */
   text-align: center;
   padding: 1em;
   font-size: 0.9em;
   color: #555;
   border-top: 1px solid #ccc;
+}
 
-  }
-
+@media (max-width: 37.5em) {
+}
