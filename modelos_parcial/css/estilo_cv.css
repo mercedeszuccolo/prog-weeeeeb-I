@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contenedor_principal {
+  width: 80%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+.datos_personales {
+  width: 80%;
+  height: 33vh;
+  border: 2px solid red;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 2em;
+  align-items: center;
+}
+
+.datos_personales li {
+  list-style: none;
+}
+
+.imagen {
+  background-color: gray;
+  border: 2px solid blue;
+  align-content: center;
+  padding: 3em;
+  border-radius: 2em;
+}
+
+.experiencia_laboral,
+.estudios {
+  width: 80%;
+  height: 33vh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin-left: 8.5em;
+  border: 2px solid yellow;
+}
+.experiencia_laboral h2,
+.estudios h2 {
+  margin-left: 1em;
+}
+.experiencia_laboral li,
+.estudios li {
+  margin-left: 2em;
+}

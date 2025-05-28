@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+}
+
+.contenedor_general {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "uno uno dos dos"
+    "uno uno dos dos"
+    "tres cuatro cinco seis";
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.uno {
+  border: 1px solid black;
+  background-color: aquamarine;
+  grid-area: uno;
+}
+
+.dos {
+  border: 1px solid black;
+  background-color: yellow;
+  grid-area: dos;
+}
+
+.tres {
+  border: 1px solid black;
+  background-color: pink;
+  grid-area: tres;
+}
+
+.cuatro {
+  border: 1px solid black;
+  background-color: pink;
+
+  grid-area: cuatro;
+}
+
+.cinco {
+  border: 1px solid black;
+  background-color: pink;
+
+  grid-area: cinco;
+}
+
+.seis {
+  border: 1px solid black;
+  background-color: pink;
+
+  grid-area: seis;
+}
+
+@media (max-width: 768px) {
+  .contenedor_general {
+    grid-template-areas:
+      "uno uno"
+      "dos dos"
+      "tres cuatro"
+      "cinco seis";
+  }
+
+  .uno {
+    margin-bottom: 2em;
+  }
+
+  .cinco,
+  .seis {
+    background-color: aquamarine;
+  }
+}
