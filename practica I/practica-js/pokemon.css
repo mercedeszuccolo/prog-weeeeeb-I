@@ -1,0 +1,40 @@
+.contenedor-juego{
+    background-color: aqua;
+    width: 100%;
+    height: 100vh;
+}
+
+.numeros{
+    border-radius: 2em;
+    border: 2px solid black;
+
+}
+
+.cuadrado{
+    display: grid;
+    grid-template-areas:
+    ". top ."
+    "left center right"
+    ". bottom .";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 300px;
+    height: 300px;
+
+}
+
+#1 { 
+    grid-area: top; 
+}
+#2 { 
+    grid-area: right; 
+}
+#3 { 
+    grid-area: bottom; 
+}
+#4 { 
+    grid-area: left; 
+}
+#comenzar { 
+    grid-area: center; 
+}
