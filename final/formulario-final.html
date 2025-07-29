@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario-final.css">
+    <title>Formulario</title>
+
+</head>
+<body>
+    <main class="contenedor-principal">
+        <div class="contenedor-formulario">
+            <section class="contenedor-encabezado">
+                <h1 class="titulo">Registrarse</h1>
+            </section>
+            <section class="formulario">
+                <form action="" method="get">
+                    <article class="secciones-form">
+                        <label for="name">Nombre</label>
+                        <input type="text" name="name" id="name"> 
+                        <p class="error" id="error-nombre"></p>
+                    </article>
+                   <article class="secciones-form">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email"> 
+                        <p class="error" id="error-email"></p>
+
+                    </article>
+                     <article class="secciones-form">
+                        <label for="password">Contraseña</label>
+                        <input type="password" name="password" id="password"> 
+                       <p class="error" id="error-contra"></p>
+
+                    </article>
+                     <article class="secciones-form">
+                        <label for="repetir-password">Contraseña</label>
+                        <input type="password" name="repetir-password" id="repetir-password"> 
+                        <p class="error" id="error-repetir-contra"></p>
+
+                    </article>
+                     <article class="secciones-form">
+                        <select name="pais" id="pais" class="select">
+                            <option value="arg">Argentina</option>
+                            <option value="esp">España</option>
+                            <option value="max">Mexico</option>
+                           <p class="error" id="error-pais"></p>
+                        </select>
+                    </article>
+                     <article class="secciones-form">
+                        <label for="genero">Genero</label>
+                        <label for="femenino">Femenino</label>
+                        <input type="radio" name="genero" id="femenino">
+                        <label for="masculino">Masculino</label>
+                        <input type="radio" name="genero" id="masculino">
+                       <label for="femenino">Otro</label>
+                        <input type="radio" name="genero" id="otro">
+                        <p class="error" id="error-genero"></p>
+
+                        </article>
+
+                        <div class="div-botones">
+                            <button class="btn enviar" type="submit">Enviar</button>
+                            <button class="btn cancelar" type="reset">Cancelar</button>
+
+                        </div>
+                </form>
+            </section>
+        </div>
+
+    </main>
+    <script src="formulario-final.js"></script>
+</body>
+</html>

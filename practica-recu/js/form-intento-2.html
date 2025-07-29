@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form-intento-2.css">
+    <title>Formulario 2</title>
+</head>
+<body>
+    <main class="contenedor-general">
+        <form action="" class="formulario">
+            <div class="campo">
+                <label for="usuario">Nombre de usuario</label>
+                <input type="text" id="usuario">
+                <div class="error-messages" id="error-usuario"></div>
+            </div>
+              <div class="campo">
+                <label for="contrasenia">Contraseña: </label>
+                <input type="password" id="contrasenia">
+                <div class="error-messages" id="error-contrasenia-larga"></div>
+                <div class="error-messages" id="error-contrasenia-caracter"></div>
+            </div>
+
+              <div class="campo">
+                <label for="contrasenia">Contraseña: </label>
+                <input type="password" id="repetirContrasenia">
+                <div class="error-messages" id="error-contrasenia-repetir"></div>
+            </div>
+
+<div class="campo">
+        <button type="button" id="registrar" class="boton">Registrar</button>
+        <button type="button" id="cancelar" class="boton">Cancelar</button>
+        </div>
+        </form>
+
+
+    </main>
+    <script src="form-intento-2.js"></script>
+</body>
+</html>

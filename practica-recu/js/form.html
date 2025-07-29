@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <main contenedor-general>
+        <form action="" id="formulario" class="formulario">
+        <div class="campo usuario">
+        <label for="usuario">Usuario: </label>
+        <input type="text" name="usuario" id="usuario">
+        <div id="error-usuario" class="error-usuario"></div>
+
+        </div>
+
+        <div class="campo contra">
+        <label for="contra">Contraseña: </label>
+        <input type="password" name="contra" id="contra">
+         <div id="error-contra-longitud" class="error-contra"></div>
+        <div id="error-contra-caracteres" class="error-contra"></div>
+
+        </div>
+
+        <div class="campo repetir-contra">
+        <label for="repetir-contra">Repetir contraseña:</label>
+        <input type="password" name="repetir-contra" id="repetir-contra">
+            <div id="error-repetir-contra" class="error-repetir-contra"></div>
+
+        </div>
+
+        <div class="botones">
+ <button class="registrar" id="registrar" type="button">Registrar</button>
+        <button class="cancelar" id="cancelar">Cancelar</button>
+</div>
+    </form>
+
+
+</main>
+<script src="form.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+.contenedor-general{
+    display: flex;
+    justify-content: center;
+
+    background-color: aqua;
+    width: 100%;
+    height: 100vh;
+}
+
+.formulario{
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.campo{
+      display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 20em;
+ 
+     gap: 2em;
+}
+
+input {
+  flex: 1;
+  padding: 6px;
+  border-radius: 1em   ;
+}
+.boton{
+    display: flex;
+}
+.error-messages{
+    color: red;
+}

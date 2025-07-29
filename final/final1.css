@@ -1,0 +1,67 @@
+body{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.preguntas{
+    display: grid;
+    
+    gap: 5em;
+}
+
+.una-columna {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dos-columnas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+
+article{
+    display: flex;
+    gap: 1em;
+}
+
+.pregunta span{
+    display: block;
+}
+
+#respuesta{
+    background-color: white;
+}
+
+.opciones-columna{
+    display: flex;
+    flex-direction: column;
+}
+
+.seccion-final{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nota{
+    display: flex;
+    flex-direction: column;
+}
+
+h2{
+    display: inline;
+}
+
+header{
+    text-align: center;
+}
+
+footer{
+    text-align: left;
+}
+
