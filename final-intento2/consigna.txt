@@ -1,0 +1,7 @@
+Diseñá una página con HTML, CSS y JavaScript que tenga un formulario de registro con al menos tres campos distintos (por ejemplo: nombre, correo, selección de rol o preferencia) 
+y uno o más botones.
+
+El formulario debe ser interactivo, es decir, reaccionar a las acciones del usuario modificando algo en la página (texto, colores, mensajes, etc.) sin recargarla.
+
+Podés elegir libremente qué tipo de interacción querés implementar y cómo se comporta cada parte.
+Usá tu creatividad para que el formulario tenga sentido y se vea dinámico.

@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+}
+
+.header {
+  width: 80%;
+  height: 10vh;
+  border: 2px solid blue;
+  align-items: center;
+  margin: 0 auto;
+  background-color: pink;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
+.nav_header {
+  display: flex;
+  justify-content: center;
+}
+
+.lista_header {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  font-size: 1.8em;
+}
+
+.lista_header li {
+  padding: 0.5em;
+}
+
+.contenedor_general {
+  padding-top: 12vh; /* deja espacio para el header */
+  margin-bottom: 15vh;
+}
+.receta_uno,
+.receta_dos {
+  width: 70%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 1em;
+  border: 2px solid black;
+  margin-top: 2em;
+  border-radius: 2em;
+}
+
+.img {
+  border: 2px solid black;
+  padding: 2em;
+  width: 60%;
+  text-align: center;
+}
+
+.receta_uno ol,
+.receta_dos ol {
+  width: 60%;
+}
+
+.receta_uno li,
+.receta_dos li {
+  width: 60%;
+}
+
+.contacto {
+  width: 80%;
+  height: auto;
+}
+
+.campo_form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 60%;
+  margin: 1em auto;
+  gap: 1em;
+}
+
+.campo_form label {
+  width: 30%;
+  text-align: right;
+}
+
+.campo_form input,
+.campo_form textarea {
+  flex: 1;
+  padding: 0.5em;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 0.5em;
+}
+.botones_form {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2em;
+  align-items: center;
+}
+.footer {
+  height: 10vh;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  align-items: center;
+  padding: 0.5em;
+  border: 1px solid pink;
+  text-align: center;
+  margin-top: 1em;
+  background-color: pink;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
