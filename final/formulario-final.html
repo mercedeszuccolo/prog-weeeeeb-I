@@ -33,18 +33,20 @@
 
                     </article>
                      <article class="secciones-form">
-                        <label for="repetir-password">Contraseña</label>
+                        <label for="repetir-password">Reoetir contraseña</label>
                         <input type="password" name="repetir-password" id="repetir-password"> 
                         <p class="error" id="error-repetir-contra"></p>
 
                     </article>
                      <article class="secciones-form">
                         <select name="pais" id="pais" class="select">
+                            <option value="seleccionar-pais"></option>
                             <option value="arg">Argentina</option>
                             <option value="esp">España</option>
                             <option value="max">Mexico</option>
-                           <p class="error" id="error-pais"></p>
                         </select>
+                        <p class="error" id="error-pais"></p>
+
                     </article>
                      <article class="secciones-form">
                         <label for="genero">Genero</label>
@@ -59,8 +61,8 @@
                         </article>
 
                         <div class="div-botones">
-                            <button class="btn enviar" type="submit">Enviar</button>
-                            <button class="btn cancelar" type="reset">Cancelar</button>
+                            <button class="btn enviar" type="submit" id="btn-enviar">Enviar</button>
+                            <button class="btn cancelar" type="reset" id="btn-cancelar">Cancelar</button>
 
                         </div>
                 </form>

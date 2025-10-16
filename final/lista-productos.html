@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lista-productos.css">
+    <title>Lista de productos</title>
+</head>
+<body>
+    <main class="contenedor-general">
+        
+        <section class="seccion-inputs">
+            <label for="producto">Producto</label>
+        <input type="text" name="producto" id="producto">
+
+        <label for="precio">Precio</label>
+        <input type="number" name="precio" id="precio">
+
+<button type="button" id="btn-agregar" class="btn">Agregar</button>
+
+<p id="error"></p>
+        </section>
+
+        <section class="lista-productos">
+            <p id="vacio">No hay productos para mostrar</p>
+            <div class="contenedor-grid">
+            </div>
+
+            <div class="contenedor-total">
+                <p>Total:</p>
+                <p id="total">0</p>
+            </div>
+        </section>
+    </main>
+<script src="lista-productos.js"></script>
+</body>
+</html>

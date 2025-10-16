@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor-general{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid salmon;
+    width: 100%;
+    height: 100vh;
+}
+
+.campos-productos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid blue;
+    gap: 2em;
+}
+
+.lista-productos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rebeccapurple;
+    gap: 2em;
+}
+.contenedor-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.btn{
+    padding: 1em;
+    border-radius: 1em;
+    border: none;
+    background-color: aquamarine;
+}
+
+.btn:hover{
+    background-color: beige;
+    cursor: pointer;
+}
