@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor-general {
+  width: 100%;
+  height: 100vh;
+  background-color: darkseagreen;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid green;
+  /*width: 100vw;*/
+  height: 100vh;
+  gap: 1em;
+}
+
+.campo {
+  background-color: pink;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  border: 1px solid blue;
+  width: 25%;
+  padding: 1em;
+  height: 7%;
+  border-radius: 0.4em;
+  align-items: center;
+}
+
+label {
+  display: flex;
+  align-items: start;
+}
+
+input {
+  border-radius: 0.2em;
+  height: 30px;
+  display: flex;
+}
+
+.boton {
+  padding: 1em;
+  border-radius: 1em;
+}
+
+.femenino,
+.masculino {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 0.5em;
+}
+#enviar {
+  background-color: green;
+  color: aliceblue;
+  border: none;
+}
+
+#cancelar {
+  background-color: red;
+  color: aliceblue;
+  border: none;
+}
+
+#name {
+  color: red;
+}

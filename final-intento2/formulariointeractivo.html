@@ -4,6 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form interactivo</title>
+    <link rel="stylesheet" href="formulariointeractivo.css" />
   </head>
-  <body></body>
+  <body>
+    <section class="contenedor-general" id="contenedor">
+      <form action="" class="formulario">
+        <article class="campo nombre">
+          <label for="name" class="name" id="nombre">Ingresa tu nombre</label>
+          <input type="text" id="idnombre" placeholder="John Doe" />
+          <p id="name"></p>
+        </article>
+
+        <article class="campo email">
+          <label for="email" class="email" id="email">Ingresa tu email</label>
+          <input type="email" required placeholder="ejemplo@mail.com" />
+        </article>
+
+        <article class="campo contrasenia">
+          <label for="password" class="password" id="password"
+            >Ingresa tu contraseña</label
+          >
+          <input type="password" required placeholder="********" />
+        </article>
+
+        <article class="campo genero">
+          <label for="text" class="password">Ingresa tu genero</label>
+          <article class="femenino">
+            <label for="femenino" class="femenino"> Femenino </label>
+            <input type="radio" name="radio" id="mujer" />
+          </article>
+          <article class="masculino">
+            <label for="masculino" class="masculino"> Masculino </label>
+            <input type="radio" name="radio" id="masculino" />
+          </article>
+        </article>
+
+        <div class="div-botones">
+          <button type="submit" class="boton" id="enviar">Enviar</button>
+          <button type="reset" class="boton" id="cancelar">Cancelar</button>
+        </div>
+      </form>
+    </section>
+    <script src="formulariointeractivo.js"></script>
+  </body>
 </html>
