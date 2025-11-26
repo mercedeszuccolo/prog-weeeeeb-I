@@ -7,27 +7,26 @@ const reestablecer = document.getElementById("reestablecer");
 const articleUniversidad = document.getElementById("articleUni");
 const articleDatos = document.getElementById("articleDatos");
 
-input.addEventListener("input", function(){
-    
-    nombreCambiado.textContent = input.value;
-})
+input.addEventListener("input", function () {
+  nombreCambiado.textContent = input.value;
+});
 
-violeta.addEventListener("click", function(){
-    articleUniversidad.style.backgroundColor = "violet";
-    articleUniversidad.style.color = "white";
-})
+violeta.addEventListener("click", function () {
+  articleUniversidad.style.backgroundColor = "violet";
+  articleUniversidad.style.color = "white";
+});
 
-celeste.addEventListener("click", function(){
-    articleUniversidad.style.backgroundColor = "aqua";
-    articleUniversidad.style.color = "white";
-})
+celeste.addEventListener("click", function () {
+  articleUniversidad.style.backgroundColor = "aqua";
+  articleUniversidad.style.color = "white";
+});
 
-naranja.addEventListener("click", function(){
-    articleUniversidad.style.backgroundColor = "orange";
-    articleUniversidad.style.color = "white";
-})
+naranja.addEventListener("click", function () {
+  articleUniversidad.style.backgroundColor = "orange";
+  articleUniversidad.style.color = "white";
+});
 
-reestablecer.addEventListener("click", function(){
-    articleUniversidad.style.backgroundColor = "white";
-    articleUniversidad.style.color="black";
-})
+reestablecer.addEventListener("click", function () {
+  articleUniversidad.style.backgroundColor = "white";
+  articleUniversidad.style.color = "black";
+});

@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.contenedor-general {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(212, 216, 255);
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+}
+
+.contenedor-formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  border: 1px solid white;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.div-correo,
+.div-contra {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.user,
+.pass {
+  width: 100%;
+  padding: 0.3em;
+}
+
+#correo,
+#password {
+  width: 100%;
+  border-radius: 1em;
+  padding: 0.3em;
+}
+
+.error-pass,
+.error-correo {
+  color: red;
+}
+
+.enviar {
+  padding: 0.3em;
+  border-radius: 1em;
+  background-color: rgb(172, 221, 87);
+  border: none;
+}

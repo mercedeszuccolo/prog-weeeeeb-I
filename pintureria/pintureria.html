@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pinturería La Fuente — Catálogo</title>
+    <meta
+      name="description"
+      content="Catálogo navegable de Pinturería La Fuente: pinturas, aerosoles, rodillos y accesorios."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header / Navbar -->
+    <header class="header">
+      <nav class="nav container">
+        <a href="#inicio" class="logo" aria-label="Ir a inicio">
+          <!-- Podés reemplazar por un SVG o imagen -->
+          <span class="logo-dot"></span> Pinturería <strong>La Fuente</strong>
+        </a>
+        <button
+          class="nav-toggle"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+        <ul class="nav-menu">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#marcas">Marcas</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero / Inicio -->
+    <section id="inicio" class="hero container">
+      <div class="hero-content">
+        <h1>Colores que inspiran, calidad que perdura</h1>
+        <p>
+          Catálogo navegable de <strong>Pinturería La Fuente</strong>. Explorá
+          pinturas, aerosoles, rodillos y accesorios en una interfaz simple y
+          rápida.
+        </p>
+        <a class="btn" href="#productos">Ver productos</a>
+      </div>
+      <div class="hero-ill">
+        <!-- Imagen decorativa / reemplazable -->
+        <img
+          src="./media/unnamed (1).webp"
+          alt="Ilustración de catálogo de pintura"
+          loading="lazy"
+        />
+      </div>
+    </section>
+
+    <!-- Filtro + Productos -->
+    <section id="productos" class="container section">
+      <div class="section-head">
+        <h2>Productos</h2>
+        <div class="filters">
+          <label for="categorySelect" class="sr-only"
+            >Filtrar por categoría</label
+          >
+          <select id="categorySelect">
+            <option value="todas">Todas las categorías</option>
+            <!-- JS insertará el resto de categorías -->
+          </select>
+          <input
+            id="searchInput"
+            type="search"
+            placeholder="Buscar producto..."
+            aria-label="Buscar producto"
+          />
+        </div>
+      </div>
+
+      <div id="productsGrid" class="grid">
+        <!-- JS renderiza las tarjetas acá -->
+      </div>
+    </section>
+
+    <!-- Marcas -->
+    <section id="marcas" class="brands section">
+      <div class="container">
+        <h2>Marcas</h2>
+        <p class="brands-desc">
+          Trabajamos con marcas líderes para garantizar el mejor resultado en
+          cada proyecto.
+        </p>
+        <div class="brand-logos">
+          <img
+            src="https://via.placeholder.com/140x60?text=Marca+1"
+            alt="Marca 1"
+            loading="lazy"
+          />
+          <img
+            src="https://via.placeholder.com/140x60?text=Marca+2"
+            alt="Marca 2"
+            loading="lazy"
+          />
+          <img
+            src="https://via.placeholder.com/140x60?text=Marca+3"
+            alt="Marca 3"
+            loading="lazy"
+          />
+          <img
+            src="https://via.placeholder.com/140x60?text=Marca+4"
+            alt="Marca 4"
+            loading="lazy"
+          />
+          <img
+            src="https://via.placeholder.com/140x60?text=Marca+5"
+            alt="Marca 5"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contact section">
+      <div class="container contact-grid">
+        <div>
+          <h2>Contacto</h2>
+          <p>
+            ¿Consultas rápidas? Escribinos por WhatsApp o completá el formulario
+            y te respondemos a la brevedad.
+          </p>
+          <ul class="contact-list">
+            <li>
+              <strong>Dirección:</strong> Av. Siempre Viva 742, Buenos Aires
+            </li>
+            <li><strong>Teléfono:</strong> (011) 1234-5678</li>
+            <li><strong>Horario:</strong> Lun a Sáb, 9:00–18:00</li>
+            <li>
+              <a
+                class="btn btn-outline"
+                href="https://wa.me/5491112345678"
+                target="_blank"
+                rel="noopener"
+                >WhatsApp</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <form id="contactForm" class="card" novalidate>
+          <div class="form-field">
+            <label for="name">Nombre</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              required
+              placeholder="Tu nombre"
+            />
+            <small class="error-msg"></small>
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              required
+              placeholder="tunombre@email.com"
+            />
+            <small class="error-msg"></small>
+          </div>
+          <div class="form-field">
+            <label for="message">Mensaje</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              required
+              placeholder="¿En qué podemos ayudarte?"
+            ></textarea>
+            <small class="error-msg"></small>
+          </div>
+          <button type="submit" class="btn">Enviar</button>
+          <p id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-grid">
+        <p>
+          © <span id="year"></span> Pinturería La Fuente. Todos los derechos
+          reservados.
+        </p>
+        <nav aria-label="Footer">
+          <a href="#inicio">Inicio</a>
+          <a href="#productos">Productos</a>
+          <a href="#marcas">Marcas</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+      </div>
+    </footer>
+
+    <!-- Modal de producto -->
+    <dialog id="productModal" class="modal">
+      <button class="modal-close" aria-label="Cerrar">✕</button>
+      <div class="modal-body">
+        <img id="modalImage" src="" alt="" loading="lazy" />
+        <div class="modal-info">
+          <h3 id="modalTitle"></h3>
+          <p class="modal-category" id="modalCategory"></p>
+          <p id="modalDesc"></p>
+          <!-- Podés agregar más campos: rendimiento, base, terminación, etc. -->
+        </div>
+      </div>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>

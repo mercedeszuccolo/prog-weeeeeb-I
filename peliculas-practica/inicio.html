@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicia Sesion</title>
+    <link rel="stylesheet" href="inicio.css" />
+  </head>
+  <body>
+    <section class="contenedor-general">
+      <h1>Bienvenido</h1>
+
+      <div class="contenedor-formulario">
+        <form action="submit" method="get" class="formulario">
+          <div class="div-correo">
+            <label for="user" class="user">Correo</label>
+            <input
+              type="email"
+              name="correo"
+              id="correo"
+              placeholder="ejemplo@mail.com"
+              required
+            />
+            <p class="error-correo" id="error-correo"></p>
+          </div>
+          <div class="div-contra">
+            <label for="pass" class="pass">Contraseña</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="*********"
+              required
+            />
+            <p class="error-pass" id="error-pass"></p>
+          </div>
+          <button type="button" class="enviar" id="enviar">Enviar</button>
+        </form>
+      </div>
+    </section>
+    <script src="inicio.js"></script>
+  </body>
+</html>

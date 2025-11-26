@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de productos</title>
+    <link rel="stylesheet" href="gestionproductos.css" />
+  </head>
+  <body>
+    <section class="contenedor-general">
+      <div class="agregar-productos">
+        <label for="nombre" class="producto nombre">Producto</label>
+        <input
+          type="text"
+          name="producto"
+          id="producto"
+          placeholder="Ingrese el nombre del producto"
+        />
+        <label for="precio" class="producto precio">Precio</label>
+        <input
+          type="number"
+          name="precio"
+          id="precio"
+          placeholder="Ingrese solo numeros enteros"
+        />
+        <button class="boton" id="agregar">Agregar</button>
+      </div>
+
+      <div class="buscador-productos" id="buscador-productos">
+        <label for="filtrar" class="producto filtrar">Buscar</label>
+        <input
+          type="text"
+          name="filtro"
+          id="filtro"
+          placeholder="Busca tu producto"
+        />
+      </div>
+      <div class="lista-productos" id="lista"></div>
+      <p id="total">Total:</p>
+    </section>
+    <script src="gestionproductos.js"></script>
+  </body>
+</html>
